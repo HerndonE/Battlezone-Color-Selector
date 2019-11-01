@@ -16,10 +16,10 @@ a muliplayer game. Once done you want to select "MPI: CS: Chill". In the options
 to select your team colors.
 
 Do note:
-	 - 1. If no colors are selected will result in default red and blue.
-	 - 2. Custom RGB values MUST be greater than 0.
-	 - 3. No two teams can be the same color UNLESS you use the sliders.
-	 - 4. Stock aips seems to be the best aip to use
+1. If no colors are selected will result in default red and blue.
+2. Custom RGB values MUST be greater than 0.
+3. No two teams can be the same color UNLESS you use the sliders.
+4. Stock aips seems to be the best aip to use
 
 Organization:
 
