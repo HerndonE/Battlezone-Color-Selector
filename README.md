@@ -56,8 +56,8 @@ if GetVarItemInt("network.session.ivar102") == 2 then -- Team 6 color green on. 
 end
 
 if GetVarItemInt("network.session.ivar102") == 0 then -- Team color green off
-  
-end	
+end  
+	
 --------------------------------------------------------
 
 lets take another look
