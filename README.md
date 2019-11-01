@@ -8,11 +8,11 @@ like Deathmatch, Free For All, or by changing your preferences file. However thi
 mode multiplayer instant aka MPI stagnate. As of 2019, this deadlock of being red team color has 
 changed.
 
- The file where the color selector code is located at "\Missions\Multiplayer\MPI-CS-Chill\scripts\lua"
+ The file where the color selector code is located at **"\Missions\Multiplayer\MPI-CS-Chill\scripts\lua"**
 
  How to use this file is to drop your files in your Battlezone Combat Commander addon folder under
-*"C:\Users\YourName\Documents\My Games\Battlezone Combat Commander\addon"*. Then launch Battlezone and create
-a muliplayer game. Once done you want to select "MPI: CS: Chill". In the options tab you can click the fourth page
+**"C:\Users\YourName\Documents\My Games\Battlezone Combat Commander\addon"**. Then launch Battlezone and create
+a muliplayer game. Once done you want to select **"MPI: CS: Chill"**. In the options tab you can click the fourth page
 to select your team colors.
 
 Do note:
