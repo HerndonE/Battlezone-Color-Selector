@@ -22,7 +22,7 @@ Do note:
 4. Stock aips seems to be the best aip to use
 
 Organization:
-
+```
 /*-------------------	organization	-------------------------------
 		
 		 declare rgb values for team 1 and team 2 
@@ -33,10 +33,9 @@ Organization:
 			rgb statements
 			}
 ---------------------------------------------------------------------*/
-
+```
 Snippet of code:
 
---------------------------------------------------------- 
 ```
 --[[Green Color]]--
  
@@ -58,11 +57,8 @@ end
 if GetVarItemInt("network.session.ivar102") == 0 then -- Team color green off
 end  
 ```	
---------------------------------------------------------
-
 lets take another look
-
---------------------------------------------------------	
+	
 ```
 	     -- These integer values are declared in the Mission table/constructor
  int r = 0; -- set our rgb values at 0. The maps .inf file will set our min/max at 0 and 255 for the slider.
@@ -80,4 +76,3 @@ Mission.b = GetVarItemInt("network.session.ivar113");
 			print("Player Custom RGB "..Mission.r .." "..Mission.g .." "..Mission.b); --Once the game is loaded you can press
 	end											  --"ctrl ~" to see that your rgb values are loaded
 ```
---------------------------------------------------------
