@@ -13,8 +13,7 @@ changed.
  How to use this file is to drop your files in your Battlezone Combat Commander addon folder under
 **"C:\Users\YourName\Documents\My Games\Battlezone Combat Commander\addon"**. Then launch Battlezone and create
 a muliplayer game. Once done you want to select **"MPI: CS: Chill"**. In the options tab you can click the fourth page
-to select your team colors.
-
+to select your team colors. This mod you can see on Battlezone Combat Commander [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1851090665) page.
 Do note:
 1. If no colors are selected will result in default red and blue.
 2. Custom RGB values MUST be greater than 0.
