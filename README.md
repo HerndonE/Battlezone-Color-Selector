@@ -77,4 +77,4 @@ Mission.b = GetVarItemInt("network.session.ivar113");
 ```
 # Results 
 ![1.](https://github.com/HerndonE/Battlezone-Color-Selector/blob/master/Visuals/ConfigurationScreen.jpg)
-![2.](http://url/to/img.png)
+![2.](https://github.com/HerndonE/Battlezone-Color-Selector/blob/master/Visuals/ColorGif.gif)
