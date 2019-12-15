@@ -76,5 +76,5 @@ Mission.b = GetVarItemInt("network.session.ivar113");
 	end											  --"ctrl ~" to see that your rgb values are loaded
 ```
 # Results 
-![1.](http://url/to/img.png)
+![1.](https://github.com/HerndonE/Battlezone-Color-Selector/blob/master/Visuals/ConfigurationScreen.jpg)
 ![2.](http://url/to/img.png)
