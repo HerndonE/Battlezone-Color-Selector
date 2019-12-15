@@ -75,3 +75,6 @@ Mission.b = GetVarItemInt("network.session.ivar113");
 			print("Player Custom RGB "..Mission.r .." "..Mission.g .." "..Mission.b); --Once the game is loaded you can press
 	end											  --"ctrl ~" to see that your rgb values are loaded
 ```
+# Results 
+![1.](http://url/to/img.png)
+![2.](http://url/to/img.png)
