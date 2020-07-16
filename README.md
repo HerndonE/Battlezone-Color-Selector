@@ -13,7 +13,21 @@ changed.
  How to use this file is to drop your files in your Battlezone Combat Commander addon folder under
 **"C:\Users\YourName\Documents\My Games\Battlezone Combat Commander\addon"**. Then launch Battlezone and create
 a muliplayer game. Once done you want to select **"MPI: CS: Chill"**. In the options tab you can click the fourth page
-to select your team colors. You can also see this mod on Battlezone Combat Commander [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1851090665) page.    
+to select your team colors. You can also this configuration on Battlezone Combat Commander Steam Workshop page below.
+
+[F9bomber's Color Selector (Asset)](https://steamcommunity.com/sharedfiles/filedetails/?id=1851404655&searchtext=)
+
+![](https://img.shields.io/steam/views/1851404655) ![](https://img.shields.io/steam/subscriptions/1851404655)
+![](https://img.shields.io/steam/favorites/1851404655)
+![](https://img.shields.io/steam/downloads/1851404655)
+
+
+[F9bomber's Color Selector (Config)](https://steamcommunity.com/sharedfiles/filedetails/?id=1851090665&searchtext=)
+
+![](https://img.shields.io/steam/views/1851090665) ![](https://img.shields.io/steam/subscriptions/1851090665)
+![](https://img.shields.io/steam/favorites/1851090665)
+![](https://img.shields.io/steam/downloads/1851090665)
+    
 Do note:
 1. If no colors are selected will result in default red and blue.
 2. Custom RGB values MUST be greater than 0.
