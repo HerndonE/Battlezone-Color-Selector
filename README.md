@@ -40,10 +40,11 @@ Organization:
 		
 		 declare rgb values for team 1 and team 2 
 			
+		  colorFunction() //where player selects their color
 		  start() //Start function
 			{
 			initialize the game
-			rgb statements
+			call colorFunction
 			}
 ---------------------------------------------------------------------*/
 ```
