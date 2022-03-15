@@ -17,16 +17,16 @@ to select your team colors. You can also this configuration on Battlezone Combat
 
 [F9bomber's Color Selector (Asset)](https://steamcommunity.com/sharedfiles/filedetails/?id=1851404655&searchtext=)
 
-![](https://img.shields.io/steam/views/1851404655) ![](https://img.shields.io/steam/subscriptions/1851404655)
-![](https://img.shields.io/steam/favorites/1851404655)
-![](https://img.shields.io/steam/downloads/1851404655)
+![](https://img.shields.io/steam/views/1851404655?logo=steam) ![](https://img.shields.io/steam/subscriptions/1851404655?logo=steam)
+![](https://img.shields.io/steam/favorites/1851404655?logo=steam)
+![](https://img.shields.io/steam/downloads/1851404655?logo=steam)
 
 
 [F9bomber's Color Selector (Config)](https://steamcommunity.com/sharedfiles/filedetails/?id=1851090665&searchtext=)
 
-![](https://img.shields.io/steam/views/1851090665) ![](https://img.shields.io/steam/subscriptions/1851090665)
-![](https://img.shields.io/steam/favorites/1851090665)
-![](https://img.shields.io/steam/downloads/1851090665)
+![](https://img.shields.io/steam/views/1851090665?logo=steam) ![](https://img.shields.io/steam/subscriptions/1851090665?logo=steam)
+![](https://img.shields.io/steam/favorites/1851090665?logo=steam)
+![](https://img.shields.io/steam/downloads/1851090665?logo=steam)
     
 Do note:
 1. If no colors are selected will result in default red and blue.
