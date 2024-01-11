@@ -70,7 +70,7 @@ if GetVarItemInt("network.session.ivar102") == 0 then
 end  
 ```  
 
-```
+```lua
 -- These integer values are declared in the Mission table/constructor set our rgb values at 0. The maps .inf file will set our min/max at 0 and 255 for the slider.
  int r = 0;
  int g = 0;
