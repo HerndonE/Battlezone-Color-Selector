@@ -9,9 +9,9 @@ Since 1999, the default team color for Battlezone Combat Commander MPI (Multipla
 There are two ways you can use this color selector:
 
 1. Clone this repository
-    ```bash
-    https://github.com/HerndonE/Battlezone-Color-Selector.git
-    ```
+```bash
+https://github.com/HerndonE/Battlezone-Color-Selector.git
+```
 Drag the **Battlezone Color Selector** folder into your Battlezone Combat Commander addon folder i.e.
 **C:\Users\YourName\Documents\My Games\Battlezone Combat Commander\addon**. Then launch Battlezone and create
 a muliplayer game. Once done, you want to select **MPI: CS: Chill**. In the options tab you can click the fourth page
@@ -48,7 +48,6 @@ call colorFunction
 
 ```lua
 -- Green Color
- 
 --[[
 key terms: 
  1. ivar - an integer variable item. ivar 50-127 are free to use, they rest have been used in game.
@@ -76,18 +75,17 @@ end
  int g = 0;
  int b = 0;
 	
-
 -- Team 1 RGB Color Selector--
-
 Mission.r = GetVarItemInt("network.session.ivar111"); -- Set 'r value' to an ivar#
 Mission.g = GetVarItemInt("network.session.ivar112");
 Mission.b = GetVarItemInt("network.session.ivar113");
+
 --[[ Once all values are greater than 0, the game will set team 1 (player) custom rgb selection. Once the game is loaded you can 
 press "ctrl ~" to see that your rgb values are loaded.]]--
-	if (Mission.r > 0 and Mission.g > 0 and Mission.b > 0)  then
-		SetTeamColor(1, Mission.r, Mission.g, Mission.b);
-		print("Player Custom RGB "..Mission.r .." "..Mission.g .." "..Mission.b);
-	end											  
+if (Mission.r > 0 and Mission.g > 0 and Mission.b > 0)  then
+	SetTeamColor(1, Mission.r, Mission.g, Mission.b);
+	print("Player Custom RGB "..Mission.r .." "..Mission.g .." "..Mission.b);
+end											  
 ```
 ## Results
 <p align="center">
