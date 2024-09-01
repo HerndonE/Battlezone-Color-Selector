@@ -1,6 +1,7 @@
 assert(load(assert(LoadFile("_requirefix.lua")),"_requirefix.lua"))();
 
 local _StartingVehicles = require("_StartingVehicles");
+local color = require("color_functions")
 
 local DoEjectPilot = 0; -- Do 'standard' eject
 local DoRespawnSafest = 1; -- Respawn a 'PLAYER' at safest spawnpoint
@@ -84,18 +85,6 @@ local Mission = {
 	ElapsedGameTime = 0,
 	RemainingGameTime = 0,
 	TimeCount = 0,
-	
-	r = 0;
-	g = 0;
-	b = 0;
-	r1 = 0;
-	g2 = 0;
-	b3 = 0;
-	--UnderTheScore = "_";
-	r2 = 234;
-	g2 = 25;
-	b2 = 171;
-	
 	
 	-- Handles
 	HumanRecycler =  nil,
@@ -364,272 +353,14 @@ function DeleteObject(h)
 	end
 end
 
-function colorFunction()
-
-------------Colors Done by Ethan Herndon-----8/12/19----
-
---[[Black Color]]--
-
-if GetVarItemInt("network.session.ivar100") == 1 then
-     SetTeamColor(1, SetVector(11,11,11));
-	 SetTeamColor(2, SetVector(11,11,11));
-	 SetTeamColor(3, SetVector(11,11,11));
-	 SetTeamColor(4, SetVector(11,11,11));
-end
-
-if GetVarItemInt("network.session.ivar100") == 2 then
-     SetTeamColor(6, SetVector(11,11,11));
-end
-
-if GetVarItemInt("network.session.ivar100") == 0 then
-     
-end
-
---------------------------------------------------------
-
---[[White Color]]--
-
-if GetVarItemInt("network.session.ivar101") == 0 then
-     
-end
-
-if GetVarItemInt("network.session.ivar101") == 1 then
-     SetTeamColor(1, SetVector(255,255,255));
-	 SetTeamColor(2, SetVector(255,255,255));
-	 SetTeamColor(3, SetVector(255,255,255));
-	 SetTeamColor(4, SetVector(255,255,255));
-end
-
-if GetVarItemInt("network.session.ivar101") == 2 then
-     SetTeamColor(6, SetVector(255,255,255));
-end
-
---------------------------------------------------------- 
-
---[[Green Color]]--
- 
-if GetVarItemInt("network.session.ivar102") == 1 then
-     SetTeamColor(1, SetVector(80, 223, 32));
-	 SetTeamColor(2, SetVector(80, 223, 32));
-	 SetTeamColor(3, SetVector(80, 223, 32));
-	 SetTeamColor(4, SetVector(80, 223, 32));
-end
-
-if GetVarItemInt("network.session.ivar102") == 2 then
-     SetTeamColor(6, SetVector(80, 223, 32));
-end
-
-if GetVarItemInt("network.session.ivar102") == 0 then
-  
-end	
---------------------------------------------------------
-
---[[Red Color]]--
-
-if GetVarItemInt("network.session.ivar103") == 0 then
-     
-end
-
-if GetVarItemInt("network.session.ivar103") == 1 then
-     SetTeamColor(1, SetVector(255,0,0));
-	 SetTeamColor(2, SetVector(255,0,0));
-	 SetTeamColor(3, SetVector(255,0,0));
-	 SetTeamColor(4, SetVector(255,0,0));
-end
-
-if GetVarItemInt("network.session.ivar103") == 2 then
-     SetTeamColor(6, SetVector(255,0,0));
-end	
---------------------------------------------------------
-
---[[Blue Color]]--
-
-if GetVarItemInt("network.session.ivar104") == 0 then
-   
-end
-
-if GetVarItemInt("network.session.ivar104") == 1 then
-     SetTeamColor(1, SetVector(0,0,255));
-	 SetTeamColor(2, SetVector(0,0,255));
-	 SetTeamColor(3, SetVector(0,0,255));
-	 SetTeamColor(4, SetVector(0,0,255));
-end
-
-if GetVarItemInt("network.session.ivar104") == 2 then
-     SetTeamColor(6, SetVector(0,0,255));
-end
---------------------------------------------------------
-
---[[Yellow Color]]--
-
-if GetVarItemInt("network.session.ivar105") == 0 then
-    
-end
-
-if GetVarItemInt("network.session.ivar105") == 1 then
-     SetTeamColor(1, SetVector(255, 255, 0));
-	 SetTeamColor(2, SetVector(255, 255, 0));
-	 SetTeamColor(3, SetVector(255, 255, 0));
-	 SetTeamColor(4, SetVector(255, 255, 0));
-end
-
-if GetVarItemInt("network.session.ivar105") == 2 then
-     SetTeamColor(6, SetVector(255, 255, 0));
-end
---------------------------------------------------------
-
---[[Purple Color]]--
-
-if GetVarItemInt("network.session.ivar106") == 0 then
-    
-end
-
-if GetVarItemInt("network.session.ivar106") == 1 then
-     SetTeamColor(1, SetVector(128, 0, 255));
-	 SetTeamColor(2, SetVector(128, 0, 255));
-	 SetTeamColor(3, SetVector(128, 0, 255));
-	 SetTeamColor(4, SetVector(128, 0, 255));
-end
-
-if GetVarItemInt("network.session.ivar106") == 2 then
-     SetTeamColor(6, SetVector(128, 0, 255));
-end
---------------------------------------------------------
-
---[[Pink Color]]--
-
-if GetVarItemInt("network.session.ivar107") == 0 then
-     
-end
-
-if GetVarItemInt("network.session.ivar107") == 1 then
-     SetTeamColor(1, SetVector(255, 0, 255));
-	 SetTeamColor(2, SetVector(255, 0, 255));
-	 SetTeamColor(3, SetVector(255, 0, 255));
-	 SetTeamColor(4, SetVector(255, 0, 255));
-end
-
-if GetVarItemInt("network.session.ivar107") == 2 then
-     SetTeamColor(6, SetVector(255, 0, 255));
-end
---------------------------------------------------------
-
---[[Orange Color]]--
-
-if GetVarItemInt("network.session.ivar108") == 0 then
-   
-end
-
-if GetVarItemInt("network.session.ivar108") == 1 then
-     SetTeamColor(1, SetVector(255, 191, 0));
-	 SetTeamColor(2, SetVector(255, 191, 0));
-	 SetTeamColor(3, SetVector(255, 191, 0));
-	 SetTeamColor(4, SetVector(255, 191, 0));
-end
-
-if GetVarItemInt("network.session.ivar108") == 2 then
-     SetTeamColor(6, SetVector(255, 191, 0));
-end
---------------------------------------------------------
-
---[[Brown Color]]--
-
-if GetVarItemInt("network.session.ivar109") == 0 then
-    
-end
-
-if GetVarItemInt("network.session.ivar109") == 1 then
-     SetTeamColor(1, SetVector(102, 51, 0));
-	 SetTeamColor(2, SetVector(102, 51, 0));
-	 SetTeamColor(3, SetVector(102, 51, 0));
-	 SetTeamColor(4, SetVector(102, 51, 0));
-end
-
-if GetVarItemInt("network.session.ivar109") == 2 then
-     SetTeamColor(6, SetVector(102, 51, 0));
-end
---------------------------------------------------------
-
-
---[[Gray Color]]--
-
-if GetVarItemInt("network.session.ivar110") == 0 then
-    
-end
-
-if GetVarItemInt("network.session.ivar110") == 1 then
-     SetTeamColor(1, SetVector(128, 128, 128));
-	 SetTeamColor(2, SetVector(128, 128, 128));
-	 SetTeamColor(3, SetVector(128, 128, 128));
-	 SetTeamColor(4, SetVector(128, 128, 128));
-end
-
-if GetVarItemInt("network.session.ivar110") == 2 then
-     SetTeamColor(6, SetVector(128, 128, 128));
-end
---------------------------------------------------------	
-	
---[[Team 1 RGB Color Selector]]--
-
-Mission.r = GetVarItemInt("network.session.ivar111");
-Mission.g = GetVarItemInt("network.session.ivar112");
-Mission.b = GetVarItemInt("network.session.ivar113");
-	if (Mission.r > 0 and Mission.g > 0 and Mission.b > 0)  then
-		SetTeamColor(1, Mission.r, Mission.g, Mission.b);
-		SetTeamColor(2, Mission.r, Mission.g, Mission.b);
-		SetTeamColor(3, Mission.r, Mission.g, Mission.b);
-		SetTeamColor(4, Mission.r, Mission.g, Mission.b);
-			print("Player Custom RGB "..Mission.r .." "..Mission.g .." "..Mission.b);
-	end
-
---[[Team 6 RGB Color Selector]]--
-
-Mission.r1 = GetVarItemInt("network.session.ivar114");
-Mission.g2 = GetVarItemInt("network.session.ivar115");
-Mission.b3 = GetVarItemInt("network.session.ivar116");
-	if (Mission.r1 > 0 and Mission.g2 > 0 and Mission.b3 > 0)  then
-		SetTeamColor(6, Mission.r1, Mission.g2, Mission.b3);
-			print("AI Custom RGB "..Mission.r1 .." "..Mission.g2 .." "..Mission.b3);
-	end
-
-
---------------------------------------------------------
-
-
---[[Random Color]]--  - Ethan Herndon 10/12/19
-
-local Min = 0.0;
-local Max = 255.0;
-	
-Mission.r2 = GetRandomFloat(Min, Max) ;
-Mission.g2 = GetRandomFloat(Min, Max) ;
-Mission.b2 = GetRandomFloat(Min, Max) ;
-		
-	
-if GetVarItemInt("network.session.ivar118") == 0 then
-
-end
-
-if GetVarItemInt("network.session.ivar118") == 1 then
-SetTeamColor(1, SetVector(Mission.r2, Mission.g2, Mission.b2));
-SetTeamColor(2, SetVector(Mission.r2, Mission.g2, Mission.b2));
-SetTeamColor(3, SetVector(Mission.r2, Mission.g2, Mission.b2));
-SetTeamColor(4, SetVector(Mission.r2, Mission.g2, Mission.b2));
-end
-	
-if GetVarItemInt("network.session.ivar118") == 2 then
-SetTeamColor(6, SetVector(Mission.r2, Mission.g2, Mission.b2));
-end
-
---------------------------------------------------------
-end
 
 function Start()
 	_StartingVehicles.Start();
 
-	print("File: mpinstant.lua converted by AI_Unit");
+	print("File: mpinstant.lua converted by AI_Unit, modified by F9bomber and Ken Miller");
 	print("Color Selector by F9bomber");
-
+	color.team_color()
+	
 	local mapTrnFile = GetMapTRNFilename();
 	Mission.RespawnAtLowAltitude = GetODFBool(mapTrnFile, "DLL", "RespawnAtLowAltitude", false);
 
@@ -711,52 +442,16 @@ function Start()
 		Ally(Mission.CPUTeamNum, Mission.StratTeam);
 	end
 
-	colorFunction();
 end
 
-
-local MissionData = {
-
-ColorChange = 0;
-
-}
-
 function Update()
-
-	--RGB Animation - Ethan Herndon 10/12/19
-	MissionData.ColorChange  = MissionData.ColorChange  + 1;
-
-	local Min = 0.0;
-	local Max = 255.0;
-	if (MissionData.ColorChange  >= SecondsToTurns(1)) then --- Change color every second
-		MissionData.ColorChange  = 0;
-		Mission.r2 = GetRandomFloat(Min, Max) ;
-		Mission.g2 = GetRandomFloat(Min, Max) ;
-		Mission.b2 = GetRandomFloat(Min, Max) ;
-		--print("1 sec marker");
-		
-	end
-
-	if GetVarItemInt("network.session.ivar117") == 0 then
-	
-	end
-
-	if GetVarItemInt("network.session.ivar117") == 1 then
-	 SetTeamColor(1, SetVector(Mission.r2, Mission.g2, Mission.b2));
-	 SetTeamColor(2, SetVector(Mission.r2, Mission.g2, Mission.b2));
-	 SetTeamColor(3, SetVector(Mission.r2, Mission.g2, Mission.b2));
-	 SetTeamColor(4, SetVector(Mission.r2, Mission.g2, Mission.b2));
-	end
-	
-	if GetVarItemInt("network.session.ivar117") == 2 then
-	 SetTeamColor(6, SetVector(Mission.r2, Mission.g2, Mission.b2));
-	end
-	
 	Mission.TurnCounter = Mission.TurnCounter + 1;
 	DoGenericStrategy(Mission.TeamIsSetUp, Mission.RecyclerHandles);
 
 	ExecuteCheckIfGameOver();
 	UpdateGameTime();
+
+	color.rgb_animation(Mission.TurnCounter)
 
 	if ((Mission.TurnCounter % (10 * GameTPS)) == 0) then
 		for i = 1, MAX_TEAMS do
@@ -774,7 +469,6 @@ function Update()
 	end
 
 end
-
 
 
 function AddPlayer(id, Team, IsNewPlayer)
